@@ -5,20 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form </title>
     <style>
+    
+        
         fieldset{
 	width: 50%;
+    color: white;
 	border:1px solid blue;
 	border-radius: 12px;
-	box-shadow: 10px 10px 5px lightblue;
-    align-items: center;
+	box-shadow: 5px 10px 5px rgb(5, 24, 30);
+    background-color: #1f1f1f;
+    
 }
 label{
 	font-size: 14pt;
 	font-weight: bold;
-	color: blue;
+	color: white;
+    
 }
-input[type=text],input[type=number],select{
+input,select{
 	width: 100%;
+   
 	border:1px solid blue;
 	border-radius: 12px;
 	padding: 12px 16px;
@@ -35,8 +41,8 @@ textarea{
 	box-sizing: border-box;
 	margin-top: 6px;
 }
-input[type=submit],input[type=reset]{
-	width: 30%;
+input[type=submit],input[type=reset],[type=checkbox]{
+	width: 100%;
 	border:none;
 	border-radius: 12px;
 	padding: 16px 32px;
@@ -47,17 +53,21 @@ input[type=submit],input[type=reset]{
 	float: right;
 	
 }
+
+
     </style>
 </head>
 <body>
-    <fieldset><legend>Student Registeration form</legend>
+    <div class="cen">
+    <fieldset><legend style="background-color: #1f1f1f; color: white;">Student Registeration form</legend>
         <form action="#" method="post">
+         
             <label>Name:</label><input type="text" name="txt1" placeholder="Enter name" title="Magaca qofka" required> <br> <br>
-            <label">Father's Name: </label> <input type="text" name="txt2" placeholder="Enter your father's name" required> <br><br>
+            <label>Father's Name:</label> <input type="text" name="txt2" placeholder="Enter your father's name" required> <br><br>
             <label>Birthdate:</label> <input type="date" name="date"  required> <br><br>
             <label>Tell:</label> <input type="tel" name="txt2" placeholder="061-xxxxxx" required> <br><br>
-            <label">Email: </label> <input type="email" name="txt3" placeholder="example@gmail.com" required> <br> <br>
-            <label">Address: </label> <input type="text" name="txt4" placeholder="Your address" required><br><br>
+            <label>Email:</label> <input type="email" name="txt3" placeholder="example@gmail.com" required> <br> <br>
+            <label>Address:</label> <input type="text" name="txt4" placeholder="Your address" required><br><br>
             <label>Sex:</label> <input type="radio" name="sex" value="Male">Male 
             <input type="radio" name="sex" value="Female">Female <br><br>
         <label>Faculty :</label> <select name="txt3">
@@ -69,6 +79,7 @@ input[type=submit],input[type=reset]{
             <option value="Economy">Economy</option>
         </select> <br><br>
         <h4>Choose Three hobbies you like the most</h4><br>
+       
         <input type="checkbox"> <label">Reading Books</label>   <br><br>
         <input type="checkbox"> <label">Watching Movies</label>   <br><br>
         <input type="checkbox" > <label">Having fun with friends</label>   <br><br>
@@ -79,6 +90,12 @@ input[type=submit],input[type=reset]{
         <input type="submit" value="Save"> <input type="reset" value="Clear"> 
         </form>
         </fieldset>
+       <ol>
+        <li>mohamed</li>
+        <li>mohamed</li>
+        <li>mohamed</li>
+       </ol>
+    </div>
         
 </body>
 </html>
